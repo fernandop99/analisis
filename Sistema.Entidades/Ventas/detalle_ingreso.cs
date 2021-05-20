@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Sistema.Entidades.Ventas
 {
@@ -12,5 +13,23 @@ namespace Sistema.Entidades.Ventas
         public decimal precio_detalle_ingreso { get; set; }
 
         public int ingreso_detalle_ingreso { get; set; }
+
+        public ICollection<detalle_venta> detalle_venta { get; set; }
+
+        public Usuarios.persona persona
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public Usuarios.persona persona1
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

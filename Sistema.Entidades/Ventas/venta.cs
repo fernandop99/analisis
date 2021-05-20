@@ -24,5 +24,31 @@ namespace Sistema.Entidades.Ventas
         public decimal total { get; set; }
 
         public int condicion_venta { get; set; }
+
+        public ICollection<detalle_venta> detalle_ventas { get; set; }
+
+        public detalle_venta detalle_venta
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public detalle_venta detalle_venta1
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public detalle_venta detalle_venta2
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

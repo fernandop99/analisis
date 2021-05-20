@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Sistema.Entidades.Almacen.Categoria">
+    <Position X="8.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAEAAAAAACAAAAAAAAEAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Almacen\Categoria.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="articulos" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Sistema.Entidades.Usuarios.persona">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <AssociationLine Name="ventas" Type="Sistema.Entidades.Ventas.venta" ManuallyRouted="true">
+      <Path>
+        <Point X="11" Y="0.594" />
+        <Point X="10.893" Y="0.594" />
+        <Point X="10.893" Y="0.712" />
+        <Point X="2.107" Y="0.712" />
+        <Point X="2.107" Y="0.844" />
+        <Point X="2" Y="0.844" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAIACgAAAAAAAAAAAAAAAAAAAAAQYGAgI=</HashCode>
+      <FileName>Usuarios\persona.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="ingresos" />
+      <Property Name="ventas" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Sistema.Entidades.Usuarios.Rol">
+    <Position X="6" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAABAAIICgAEAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Usuarios\Rol.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="usuarios" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Sistema.Entidades.Usuarios.Usuarios">
+    <Position X="4" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAIAAEAAEIACgAAAAQAAAgAEAAgAAAAAAAQQEAAI=</HashCode>
+      <FileName>Usuarios\Usuarios.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="ventas" />
+      <Property Name="ingresos" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Sistema.Entidades.Ventas.detalle_ingreso">
+    <Position X="2.25" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>EAAEAAAAAAAAAAAAAIBAAAAAACAAAAQAAEAAAAAAAAA=</HashCode>
+      <FileName>Ventas\detalle_ingreso.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="detalle_venta" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Sistema.Entidades.Ventas.detalle_venta">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAEAAAAIAAAAAAAAAAEAAAAAQAAAgAAAAAAEA=</HashCode>
+      <FileName>Ventas\detalle_venta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sistema.Entidades.Ventas.ingreso">
+    <Position X="8.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAIAEAAAAAABQAAAQAAAAAgAAAAAQIAAAAQAAAA=</HashCode>
+      <FileName>Ventas\ingreso.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sistema.Entidades.Ventas.venta">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAEAAAAAAAAAAAAAAKABAIACACQABAAAEAAAAgAAAA=</HashCode>
+      <FileName>Ventas\venta.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="detalle_ventas" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Sistema.Entidades.Almacen.articulo">
+    <Position X="5.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAEAAAACAAAEAAIAAAACClAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Almacen\articulo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="detalle_ventas" />
+      <Property Name="detalle_Ingresos" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

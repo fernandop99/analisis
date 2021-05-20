@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Sistema.Entidades.Usuarios.persona" Collapsed="true">
+    <Position X="7.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAIACgAAAAAAAAAAAAAAAAAAAAAQYGAgI=</HashCode>
+      <FileName>Usuarios\persona.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Usuarios" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sistema.Entidades.Usuarios.Rol" Collapsed="true">
+    <Position X="6.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAABAAIICgAEAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Usuarios\Rol.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ingreso" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sistema.Entidades.Usuarios.Usuarios" Collapsed="true">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAIAAEAAEIACgAAAAQAAAgAEAAgAAAAAAAQQEAAI=</HashCode>
+      <FileName>Usuarios\Usuarios.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Rol" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sistema.Entidades.Ventas.detalle_venta" Collapsed="true">
+    <Position X="5.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAEAAAAIAAAAAAAAAAEAAAAAQAAAgAAAAAAEA=</HashCode>
+      <FileName>Ventas\detalle_venta.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="persona" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sistema.Entidades.Ventas.ingreso" Collapsed="true">
+    <Position X="5.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAIAEAAAAAABQAAAQAAAAAgAAAAAQIAAAAQAAAA=</HashCode>
+      <FileName>Ventas\ingreso.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="venta" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sistema.Entidades.Ventas.venta" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAEAAAAAAAAAAAAAAKABAIACACQABAAAEAAAAgAAAA=</HashCode>
+      <FileName>Ventas\venta.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="detalle_venta" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

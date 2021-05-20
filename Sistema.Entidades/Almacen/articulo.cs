@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sistema.Entidades.Ventas;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
@@ -24,5 +25,25 @@ namespace Sistema.Entidades.Almacen
         public int condicion_articulo { get; set; }
 
         public int idmarca { get; set; }
+
+        public ICollection<detalle_venta> detalle_ventas { get; set; }
+
+        public ICollection<detalle_ingreso> detalle_Ingresos { get; set; }
+
+        public venta venta
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public venta venta1
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

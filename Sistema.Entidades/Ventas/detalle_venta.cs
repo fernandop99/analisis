@@ -17,5 +17,28 @@ namespace Sistema.Entidades.Ventas
 
         public decimal descuento_detalle_venta { get; set; }
 
+        public Usuarios.persona persona
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public ingreso ingreso
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public ingreso ingreso1
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

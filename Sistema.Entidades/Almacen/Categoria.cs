@@ -1,9 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Sistema.Entidades.Almacen
 {
-   public class Categoria
+    public class Categoria
     {
         public int idcategoria { get; set; }
         [Required]
@@ -15,6 +16,24 @@ namespace Sistema.Entidades.Almacen
         public String descricion { get; set; }
 
 
-        public bool condicio { get; set; }
+        public bool condicion { get; set; }
+
+        public ICollection<articulo> articulos { get; set; }
+
+        public articulo articulo
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public articulo articulo1
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

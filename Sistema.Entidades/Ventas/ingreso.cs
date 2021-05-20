@@ -11,7 +11,7 @@ namespace Sistema.Entidades.Ventas
         [Required]
 
 
-        public String topo_comprobante_ingreso { get; set; }
+        public String tipo_comprobante_ingreso { get; set; }
 
         public String serie_comprobante_ingreso { get; set; }
 
@@ -23,6 +23,28 @@ namespace Sistema.Entidades.Ventas
 
         public decimal total_ingreso { get; set; }
 
+        public venta venta
+        {
+            get => default;
+            set
+            {
+            }
+        }
 
+        public detalle_ingreso detalle_ingreso
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public detalle_ingreso detalle_ingreso1
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }
