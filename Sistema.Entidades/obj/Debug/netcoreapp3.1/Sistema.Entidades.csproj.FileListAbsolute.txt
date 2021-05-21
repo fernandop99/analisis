@@ -1,0 +1,9 @@
+C:\proyecto sistemas fernando\sistemas.Entidades\Sistema.Entidades\bin\Debug\netcoreapp3.1\Sistema.Entidades.deps.json
+C:\proyecto sistemas fernando\sistemas.Entidades\Sistema.Entidades\bin\Debug\netcoreapp3.1\Sistema.Entidades.dll
+C:\proyecto sistemas fernando\sistemas.Entidades\Sistema.Entidades\bin\Debug\netcoreapp3.1\Sistema.Entidades.pdb
+C:\proyecto sistemas fernando\sistemas.Entidades\Sistema.Entidades\obj\Debug\netcoreapp3.1\Sistema.Entidades.csprojAssemblyReference.cache
+C:\proyecto sistemas fernando\sistemas.Entidades\Sistema.Entidades\obj\Debug\netcoreapp3.1\Sistema.Entidades.AssemblyInfoInputs.cache
+C:\proyecto sistemas fernando\sistemas.Entidades\Sistema.Entidades\obj\Debug\netcoreapp3.1\Sistema.Entidades.AssemblyInfo.cs
+C:\proyecto sistemas fernando\sistemas.Entidades\Sistema.Entidades\obj\Debug\netcoreapp3.1\Sistema.Entidades.csproj.CoreCompileInputs.cache
+C:\proyecto sistemas fernando\sistemas.Entidades\Sistema.Entidades\obj\Debug\netcoreapp3.1\Sistema.Entidades.dll
+C:\proyecto sistemas fernando\sistemas.Entidades\Sistema.Entidades\obj\Debug\netcoreapp3.1\Sistema.Entidades.pdb

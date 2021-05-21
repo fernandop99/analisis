@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Sistema.Datos.Mapping.Almacen;
+using Sistema.Datos.Mapping.Informacion;
 using Sistema.Datos.Mapping.Usuarios;
 using Sistema.Datos.Mapping.Ventas;
 using System;
@@ -25,6 +26,12 @@ namespace Sistema.Datos.Mapping
             modelBuilder.ApplyConfiguration(new DetalleVentaMap());
             modelBuilder.ApplyConfiguration(new IngresoMap());
             modelBuilder.ApplyConfiguration(new VentasMap());
+            modelBuilder.ApplyConfiguration(new DepartamentoMap());
+            modelBuilder.ApplyConfiguration(new DireccionMap());
+            modelBuilder.ApplyConfiguration(new EmailMap());
+            modelBuilder.ApplyConfiguration(new MunicipioMap());
+            modelBuilder.ApplyConfiguration(new TelefonoMap());
+
 
 
 
