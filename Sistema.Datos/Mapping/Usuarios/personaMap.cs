@@ -28,6 +28,8 @@ namespace Sistema.Datos.Mapping.Usuarios
                     .HasMaxLength(20);
                 builder.Property(c => c.email)
                     .HasMaxLength(50);
-            }
+                builder.Property(persona => persona.Id_Direccion);
+                builder.Property(persona => persona.Id_Telefono);
+                builder.Property(persona => persona.Id_Email);        }
         }
     }

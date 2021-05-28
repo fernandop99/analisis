@@ -17,6 +17,6 @@ namespace Sistema.Datos.Mapping.Informacion
                 .HasMaxLength(50);
 
         }
-    {
+    
     }
 }

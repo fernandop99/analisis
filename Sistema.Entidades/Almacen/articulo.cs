@@ -10,40 +10,24 @@ namespace Sistema.Entidades.Almacen
     {
         public int idarticulo { get; set; }
         [Required]
-
-
+        [StringLength(50, ErrorMessage = "Maximo 50 caracteres")]
         public String codigo_articilo { get; set; }
 
+        [Required]
+        [StringLength(50, ErrorMessage = "maximo 50 caracteres")]
         public String nombre_articulo { get; set; }
 
         public decimal venta_articulo { get; set; }
 
         public float stock_articulo { get; set; }
 
+        [StringLength(50, ErrorMessage = "maximo 50 caracteres")]
         public String descripcion_articulo { get; set; }
 
         public int condicion_articulo { get; set; }
 
         public int idmarca { get; set; }
-
-        public ICollection<detalle_venta> detalle_ventas { get; set; }
-
-        public ICollection<detalle_ingreso> detalle_Ingresos { get; set; }
-
-        public venta venta
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        public venta venta1
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        //realcion con la tabla categorias  
+        public Categoria Categoria { get; set; }
     }
 }

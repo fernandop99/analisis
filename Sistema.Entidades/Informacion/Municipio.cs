@@ -13,5 +13,9 @@ namespace Sistema.Entidades.Informacion
         public string Nombre_Municipio { get; set; }
         [Required]
         public int Id_Departamento { get; set; }
+
+        //realcion con la tabla departamento  
+        public Departamento Departamentos { get; set; }
     }
+
 }

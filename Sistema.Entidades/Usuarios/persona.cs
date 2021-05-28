@@ -1,4 +1,5 @@
-﻿using Sistema.Entidades.Ventas;
+﻿using Sistema.Entidades.Informacion;
+using Sistema.Entidades.Ventas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -17,41 +18,25 @@ namespace Sistema.Entidades.Usuarios
         public String nombre { get; set; }
 
         public String tipo_documento { get; set; }
-
+        [Required]
+        [StringLength(20, ErrorMessage = "el numero maximo de caracteres es de 20 digitos")]
         public String num_documento { get; set; }
 
-        public String direccion { get; set; }
+        public int Id_Direccion { get; set; }
+        public int Id_Telefono { get; set; }
+        public int Id_Email { get; set; }
 
-        public String telefono { get; set; } // este debe de cambiar
+        //realcion con la tabla direccion  
+        public Direccion Direcciones { get; set; }
 
-        public String email { get; set; }
+        //realcion con la tabla Email  
+        public Email Emails { get; set; }
 
-        public ICollection<ingreso> ingresos { get; set; }
+        //realcion con la tabla telefono
+        public Telefono Telefonos { get; set; }
 
-        public ICollection<venta> ventas { get; set; }
 
-        public usuario Usuarios
-        {
-            get => default;
-            set
-            {
-            }
-        }
 
-        public usuario Usuarios1
-        {
-            get => default;
-            set
-            {
-            }
-        }
 
-        public usuario Usuarios2
-        {
-            get => default;
-            set
-            {
-            }
-        }
     }
 }

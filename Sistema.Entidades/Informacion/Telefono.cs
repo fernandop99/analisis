@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sistema.Entidades.Usuarios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
@@ -17,6 +18,7 @@ namespace Sistema.Entidades.Informacion
         [Required]
         [StringLength(11, ErrorMessage = "el numero maximo de caracteres es de 11")]
         public string Tel_Casa { get; set; }
+
 
 
     }

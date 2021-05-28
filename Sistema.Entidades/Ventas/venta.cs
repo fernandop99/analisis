@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sistema.Entidades.Usuarios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
@@ -9,14 +10,14 @@ namespace Sistema.Entidades.Ventas
     {
         public int idventa { get; set; }
         [Required]
-
-
         public String tipo_comprobante_venta { get; set; }
-
+        [Required]
+        [StringLength(10, ErrorMessage = "el numero maximo de caracteres es de 10 digitos")]
         public String serie_comprobante { get; set; }
-
+        [Required]
+        [StringLength(10, ErrorMessage = "el numero maximo de caracteres es de 10 digitos")]
         public String num_comprobante_venta { get; set; }
-
+        [Requiered]
         public DateTime fecha_hora_venta { get; set; }
 
         public decimal impuesto { get; set; }
@@ -25,30 +26,10 @@ namespace Sistema.Entidades.Ventas
 
         public int condicion_venta { get; set; }
 
-        public ICollection<detalle_venta> detalle_ventas { get; set; }
+        //realcion con la tabla usuario
+        public usuario Usuarios { get; set; }
 
-        public detalle_venta detalle_venta
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        public detalle_venta detalle_venta1
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        public detalle_venta detalle_venta2
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        //realcion con la tabla persona
+        public persona personas { get; set; }
     }
 }

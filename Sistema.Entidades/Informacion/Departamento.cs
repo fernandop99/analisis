@@ -9,12 +9,14 @@ namespace Sistema.Entidades.Informacion
         {
         [Required]
         public int Id_Depatamento { get; set; }
-
-           
+        
         [Required]
         [StringLength(50, ErrorMessage = "el numero maximo de caracteres es de 50")]
         public string Nombre_Departamento { get; set; }
 
-        }
+        //realcion con la tabla direcciones  
+        public Direccion Direcciones { get; set; }
+
+    }
     }
 

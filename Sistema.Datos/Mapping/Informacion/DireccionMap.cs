@@ -9,7 +9,7 @@ namespace Sistema.Datos.Mapping.Informacion
 {
    public class DireccionMap : IEntityTypeConfiguration<Direccion>
     {
-    {
+    
         public void Configure(EntityTypeBuilder<Direccion> builder)
         {
             builder.ToTable("Direccion")

@@ -31,6 +31,12 @@ namespace Sistema.Datos.Mapping.Usuarios
             .HasMaxLength(255);
             builder.Property(c => c.condicion)
             .HasMaxLength(10);
+            builder.Property(c => c.Id_Direccion);
+
+            builder.Property(c => c.Id_Telefono);
+
+            builder.Property(c => c.Id_Email);
+
         }
     }
 }

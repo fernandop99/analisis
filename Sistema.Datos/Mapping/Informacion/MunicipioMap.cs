@@ -16,7 +16,7 @@ namespace Sistema.Datos.Mapping.Informacion
 
             builder.Property(c => c.Nombre_Municipio)
             .HasMaxLength(70);
-            builder.Property(c => c.Id_Departamento)
+            builder.Property(c => c.Id_Departamento);
  
         }
     }

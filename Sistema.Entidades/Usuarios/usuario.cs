@@ -1,4 +1,5 @@
-﻿using Sistema.Entidades.Ventas;
+﻿using Sistema.Entidades.Informacion;
+using Sistema.Entidades.Ventas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -21,8 +22,8 @@ namespace Sistema.Entidades.Usuarios
         [Required]
         [StringLength(11, ErrorMessage = "Recuerde el número de teléfono debe contener al menos 11 digitos")]
         public string telefono { get; set; }
-        //actividad en blacckboard -> 
 
+        //actividad en blackboard -> 
         [Required]
         [StringLength(16, ErrorMessage = "el Email debe de tener entre 5 y 16 caracteres", MinimumLength = 5)]
         [RegularExpression("^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$", ErrorMessage = "ingrese un Email valido")]
@@ -35,35 +36,24 @@ namespace Sistema.Entidades.Usuarios
         [StringLength(255, ErrorMessage = "el password debe de tener entre 5 y 255 caracteres", MinimumLength = 5)]
         public string password_salt { get; set; }
 
-
         public bool condicion { get; set; }
+        public int Id_Direccion { get; set; }
+        public int Id_Telefono { get; set; }
+        public int Id_Email { get; set; }
 
-        public ICollection<venta> ventas { get; set; }
+        //realcion con la tabla direccion  
+        public Direccion Direcciones { get; set; }
 
-        public ICollection<ingreso> ingresos { get; set; }
+        //realcion con la tabla Email  
+        public Email Emails { get; set; }
 
-        public Rol Rol
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        //realcion con la tabla telefono
+        public Telefono Telefonos { get; set; }
 
-        public Rol Rol1
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        //realcion con la tabla rol
+        public Rol Roles { get; set; }
 
-        public Rol Rol2
-        {
-            get => default;
-            set
-            {
-            }
-        }
+
+
     }
 }
